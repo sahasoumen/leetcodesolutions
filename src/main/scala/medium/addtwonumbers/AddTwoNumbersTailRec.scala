@@ -1,9 +1,5 @@
 package com.soumen.leetcodesolutions
-package simple
-
-/**
- * https://leetcode.com/problems/add-two-numbers/
- */
+package medium.addtwonumbers
 
 /** Complexity O(n) */
 object AddTwoNumbersTailRec extends App {
@@ -42,7 +38,3 @@ object AddTwoNumbersTailRec extends App {
   println(addTwoNumbers(new ListNode(0), l2 = new ListNode(0)))
   println(addTwoNumbers(new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))))), l2 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))))))
 }
-
-
-//Runtime: 588 ms, faster than 97.05% of Scala online submissions for Add Two Numbers.
-//Memory Usage: 56.9 MB, less than 84.50% of Scala online submissions for Add Two Numbers.

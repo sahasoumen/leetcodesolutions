@@ -1,9 +1,5 @@
 package com.soumen.leetcodesolutions
-package simple
-
-/**
- * https://leetcode.com/problems/two-sum/
- */
+package simple.twosum
 
 /** Complexity O(n&#94;2) */
 object TwoSum extends App {
@@ -25,6 +21,3 @@ object TwoSum extends App {
   println(twoSum(Array(3, 2, 4), 6).toSeq)
   println(twoSum(Array(3, 3), 6).toSeq)
 }
-
-//Runtime: 1012 ms, faster than 39.51% of Scala online submissions for Two Sum.
-//Memory Usage: 74.9 MB, less than 44.73% of Scala online submissions for Two Sum.
