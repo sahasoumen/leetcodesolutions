@@ -13,7 +13,7 @@ object LongestSubstringWithoutRepeatingCharacters3 extends App {
     }
 
     @scala.annotation.tailrec
-    def maxSubstring(s: Seq[Char], maxLen: Int = 0): Int = if (s.isEmpty) maxLen else maxSubstring(s.tail, Math.max(maxLen, startingSubstringLen(s)))
+    def maxSubstring(s: Seq[Char], maxLen: Int = 0): Int = if (s.isEmpty || s.length <= maxLen) maxLen else maxSubstring(s.tail, Math.max(maxLen, startingSubstringLen(s)))
 
     maxSubstring(s.toList)
   }
