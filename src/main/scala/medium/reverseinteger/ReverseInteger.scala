@@ -12,12 +12,6 @@ object ReverseInteger extends App {
     case 0 => result
     case _ => if (result * 10 / 10 != result) 0 else reverse(x / 10, result * 10 + x % 10)
   }
-
-  println(reverse(123))
-  println(reverse(-123))
-  println(reverse(120))
-  println(reverse(1534236469))
-  println(reverse(-1463847412))
 }
 
 //Runtime: 677 ms, faster than 51.30% of Scala online submissions for Reverse Integer.

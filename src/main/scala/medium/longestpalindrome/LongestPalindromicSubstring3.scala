@@ -16,14 +16,5 @@ object LongestPalindromicSubstring3 extends App {
     val start = System.currentTimeMillis
     f(arg) -> (System.currentTimeMillis - start)
   }
-
-  println(time(longestPalindrome, "babad"))
-  println(time(longestPalindrome, "a"))
-  println(time(longestPalindrome, "aba"))
-  println(time(longestPalindrome, "ac"))
-  println(time(longestPalindrome, "cbbd"))
-  println(time(longestPalindrome, "eabcb"))
-  println(time(longestPalindrome, "bacabab"))
-  println(time(longestPalindrome, "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth"))
 }
 //Memory Limit Exceeded
