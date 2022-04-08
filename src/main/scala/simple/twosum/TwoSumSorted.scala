@@ -16,8 +16,4 @@ object TwoSumSorted extends App {
 
     twoSumSortedHelper(nums.toList.zipWithIndex.sortBy(_._1), target).toArray
   }
-
-  println(twoSumSorted(Array(2, 7, 11, 15), 9).toSeq)
-  println(twoSumSorted(Array(3, 2, 4), 6).toSeq)
-  println(twoSumSorted(Array(3, 3), 6).toSeq)
 }

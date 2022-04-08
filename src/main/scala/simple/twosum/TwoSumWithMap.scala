@@ -16,8 +16,4 @@ object TwoSumWithMap extends App {
 
     twoSum(nums.toList, target)
   }
-
-  println(twoSum(Array(2, 7, 11, 15), 9).toSeq)
-  println(twoSum(Array(3, 2, 4), 6).toSeq)
-  println(twoSum(Array(3, 3), 6).toSeq)
 }
