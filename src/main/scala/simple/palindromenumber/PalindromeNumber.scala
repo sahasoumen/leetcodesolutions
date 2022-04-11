@@ -1,5 +1,6 @@
 package com.soumen.leetcodesolutions
 package simple.palindromenumber
+
 /**
  * https://leetcode.com/problems/palindrome-number/
  */
@@ -13,8 +14,9 @@ object PalindromeNumber extends App {
       case _ => if (x % 10 != 0) false else isPalindrome(x / 10, digit - 2, nth / 100)
     }
 
-    if (x < 0) false else if (x < 10) true else digits(x) match {
-      case d => isPalindrome(x, d, Math.pow(10, d - 1).toInt)
+    if (x < 0) false else if (x < 10) true else {
+      val d = digits(x)
+      isPalindrome(x, d, Math.pow(10, d - 1).toInt)
     }
   }
 }
