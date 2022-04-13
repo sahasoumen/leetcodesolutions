@@ -14,5 +14,5 @@ object TopKFrequentElements2 extends App {
     topKFrequent()
   }
 }
-//Runtime: 1176 ms, faster than 31.25% of Scala online submissions for Top K Frequent Elements.
-//Memory Usage: 99.5 MB, less than 5.21% of Scala online submissions for Top K Frequent Elements.
+//Runtime: 716 ms, faster than 78.71% of Scala online submissions for Top K Frequent Elements.
+//Memory Usage: 62.5 MB, less than 78.71% of Scala online submissions for Top K Frequent Elements.
