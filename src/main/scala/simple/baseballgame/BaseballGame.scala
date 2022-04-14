@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package simple.baseballgame
 
+/**
+ * https://leetcode.com/problems/baseball-game/
+ * 682. Baseball Game
+ */
 object BaseballGame extends App {
   def calPoints(ops: Array[String]): Int = {
     @scala.annotation.tailrec

@@ -5,6 +5,7 @@ import scala.annotation.tailrec
 
 /**
  * https://leetcode.com/problems/reverse-integer/
+ * 7. Reverse Integer
  */
 object ReverseInteger extends App {
   @tailrec

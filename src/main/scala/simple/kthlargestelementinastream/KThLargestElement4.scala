@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package simple.kthlargestelementinastream
 
+/**
+ * https://leetcode.com/problems/kth-largest-element-in-a-stream/
+ * 703. Kth Largest Element in a Stream
+ */
 object KThLargestElement4 extends App {
   class KthLargest(_k: Int, _nums: Array[Int]) {
     val q = scala.collection.mutable.PriorityQueue.from(_nums)(Ordering.Int.reverse)

@@ -3,6 +3,7 @@ package medium.atoi
 
 /**
  * https://leetcode.com/problems/string-to-integer-atoi/
+ * 8. String to Integer (atoi)
  */
 object StringToInteger extends App {
   def myAtoi(s: String): Int = {

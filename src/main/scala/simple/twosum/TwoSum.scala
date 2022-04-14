@@ -1,6 +1,11 @@
 package com.soumen.leetcodesolutions
 package simple.twosum
 
+/**
+ * https://leetcode.com/problems/two-sum/
+ * 1. Two Sum
+ * */
+
 /** Complexity O(n&#94;2) */
 object TwoSum extends App {
 

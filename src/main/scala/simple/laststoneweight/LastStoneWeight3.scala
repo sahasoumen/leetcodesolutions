@@ -1,11 +1,14 @@
 package com.soumen.leetcodesolutions
 package simple.laststoneweight
 
+/**
+ * https://leetcode.com/problems/last-stone-weight/
+ * 1046. Last Stone Weight
+ * */
 object LastStoneWeight3 extends App {
-  def lastStoneWeight(stones: Array[Int]): Int = {
-    val q = scala.collection.mutable.PriorityQueue.from(stones)
-    while (q.length > 1) q.enqueue(q.dequeue() - q.dequeue())
-    if (q.isEmpty) 0 else q.dequeue()
+  def lastStoneWeight(stones: Array[Int]): Int = scala.collection.mutable.PriorityQueue.from(stones) match {
+    case q => while (q.length > 1) q.enqueue(q.dequeue() - q.dequeue())
+      if (q.isEmpty) 0 else q.dequeue()
   }
 
   println(lastStoneWeight(Array(2, 7, 4, 1, 8, 1)))

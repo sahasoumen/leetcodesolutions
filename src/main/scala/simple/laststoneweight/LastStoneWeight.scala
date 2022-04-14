@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package simple.laststoneweight
 
+/**
+ * https://leetcode.com/problems/last-stone-weight/
+ * 1046. Last Stone Weight
+ * */
 object LastStoneWeight extends App {
   def lastStoneWeight(stones: Array[Int]): Int = {
     @scala.annotation.tailrec

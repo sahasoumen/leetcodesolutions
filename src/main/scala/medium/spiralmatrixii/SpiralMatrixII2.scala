@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package medium.spiralmatrixii
 
+/**
+ * https://leetcode.com/problems/spiral-matrix-ii/
+ * 59. Spiral Matrix II
+ */
 object SpiralMatrixII2 extends App {
   def generateMatrix(n: Int): Array[Array[Int]] = {
     val arr = Array.fill(n, n)(0)

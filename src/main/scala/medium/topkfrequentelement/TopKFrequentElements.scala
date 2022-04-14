@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package medium.topkfrequentelement
 
+/**
+ * https://leetcode.com/problems/top-k-frequent-elements/
+ * 347. Top K Frequent Elements
+ */
 object TopKFrequentElements extends App {
   def topKFrequent(nums: Array[Int], k: Int): Array[Int] = nums.map(_ -> 1).groupBy(_._1).view.mapValues(_.length).toSeq.sortBy(-_._2).map(_._1).take(k).toArray
 }

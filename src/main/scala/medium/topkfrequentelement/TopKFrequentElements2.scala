@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package medium.topkfrequentelement
 
+/**
+ * https://leetcode.com/problems/top-k-frequent-elements/
+ * 347. Top K Frequent Elements
+ */
 object TopKFrequentElements2 extends App {
   def topKFrequent(nums: Array[Int], k: Int): Array[Int] = {
     @scala.annotation.tailrec

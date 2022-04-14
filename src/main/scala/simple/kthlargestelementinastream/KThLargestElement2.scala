@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package simple.kthlargestelementinastream
 
+/**
+ * https://leetcode.com/problems/kth-largest-element-in-a-stream/
+ * 703. Kth Largest Element in a Stream
+ */
 object KThLargestElement2 extends App {
   class KthLargest(_k: Int, _nums: Array[Int]) {
     var sorted = _nums.toSeq

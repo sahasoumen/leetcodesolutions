@@ -1,6 +1,10 @@
 package com.soumen.leetcodesolutions
 package medium.longestpalindrome
 
+/**
+ * https://leetcode.com/problems/longest-palindromic-substring/
+ * 5. Longest Palindromic Substring
+ * */
 object LongestPalindromicSubstring7 extends App {
   def longestPalindrome(s: String): String = {
     def isPalindrome(s: String, start: Int, len: Int) = (0 until len).find(i => s.charAt(start + i) != s.charAt(start + len - 1 - i)) match {

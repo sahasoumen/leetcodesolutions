@@ -1,7 +1,10 @@
 package com.soumen.leetcodesolutions
 package hard.medianof2sortedarrays
 
-/** https://leetcode.com/problems/median-of-two-sorted-arrays/ */
+/**
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ * 4. Median of Two Sorted Arrays
+ * */
 object MedianOfTwoSortedArrays extends App {
 
   def findMedianSortedArrays(nums1: Array[Int], nums2: Array[Int]): Double = {
