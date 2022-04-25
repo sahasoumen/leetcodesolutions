@@ -18,7 +18,7 @@ class PeekingIteratorGeneric[A](_iterator: Iterator[A]) {
   def hasNext: Boolean = pointer.isDefined
 }
 
-class PeekingIterator(_iterator: Iterator[Int]) extends PeekingIteratorGeneric[Int](_iterator)
+//class PeekingIterator(_iterator: Iterator[Int]) extends PeekingIteratorGeneric[Int](_iterator)
 
 /**
  * Your PeekingIterator object will be instantiated and called as such:

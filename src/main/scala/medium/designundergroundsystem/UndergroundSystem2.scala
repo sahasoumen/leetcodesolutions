@@ -33,7 +33,7 @@ class UndergroundSystem2() {
   }
 }
 
-object Solution extends App {
+object Solution2 extends App {
   val undergroundSystem = new UndergroundSystem2()
   undergroundSystem.checkIn(45, "Leyton", 3)
   undergroundSystem.checkIn(32, "Paradise", 8)

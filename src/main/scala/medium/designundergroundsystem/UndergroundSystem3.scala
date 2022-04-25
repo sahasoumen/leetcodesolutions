@@ -8,7 +8,7 @@ package medium.designundergroundsystem
 
 import scala.collection.mutable
 
-class UndergroundSystem2() {
+class UndergroundSystem3() {
   val travelingTime: mutable.Map[Int, Int] = mutable.Map()
   val travelingStation: mutable.Map[Int, String] = mutable.Map()
   val tripTime: mutable.Map[String, Int] = mutable.Map()
@@ -42,7 +42,7 @@ class UndergroundSystem2() {
   }
 }
 
-object Solution extends App {
+object Solution3 extends App {
   val undergroundSystem = new UndergroundSystem2()
   undergroundSystem.checkIn(45, "Leyton", 3)
   undergroundSystem.checkIn(32, "Paradise", 8)
