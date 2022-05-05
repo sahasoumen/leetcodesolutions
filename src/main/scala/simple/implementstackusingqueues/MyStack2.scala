@@ -1,18 +1,16 @@
 package com.soumen.leetcodesolutions
 package simple.implementstackusingqueues
 
-import scala.collection.mutable
-
 /**
  * https://leetcode.com/problems/implement-stack-using-queues/submissions/
  * 225. Implement Stack using Queues
  * */
 class MyStack2 {
-  val q = mutable.Queue.empty[Int]
+  val q = scala.collection.mutable.Queue.empty[Int]
 
   def push(x: Int): Unit = {
     q.enqueue(x)
-    (0 until q.size - 1).foreach(_ => q.enqueue(q.dequeue()))
+    (1 until q.size).foreach(_ => q.enqueue(q.dequeue()))
   }
 
   def pop(): Int = q.dequeue()
