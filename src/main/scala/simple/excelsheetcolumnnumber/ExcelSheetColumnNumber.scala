@@ -1,6 +1,11 @@
 package com.soumen.leetcodesolutions
 package simple.excelsheetcolumnnumber
 
+/**
+ * <a href="https://leetcode.com/problems/excel-sheet-column-number/">
+ * 171. Excel Sheet Column Number
+ * </a>
+ * */
 object ExcelSheetColumnNumber extends App {
   @scala.annotation.tailrec
   def titleToNumber(columnTitle: String, n: Int = 0): Int = if (columnTitle.isEmpty) n else titleToNumber(columnTitle.tail, n + Math.pow('Z' - 'A' + 1, columnTitle.length - 1).toInt * (columnTitle.head - 'A' + 1))
