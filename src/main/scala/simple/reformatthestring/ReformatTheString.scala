@@ -1,6 +1,11 @@
 package com.soumen.leetcodesolutions
 package simple.reformatthestring
 
+/**
+ * <a href="https://leetcode.com/problems/reformat-the-string/">
+ * 1417. Reformat The String
+ * </a>
+ * */
 object ReformatTheString extends App {
   def reformat(s: String): String = {
     s.foldLeft((0, 0)) { case ((a, d), c) => if (c.isDigit) (a, d + 1) else (a + 1, d) } match {
