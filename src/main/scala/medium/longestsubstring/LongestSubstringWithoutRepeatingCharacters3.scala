@@ -2,8 +2,9 @@ package com.soumen.leetcodesolutions
 package medium.longestsubstring
 
 /**
- * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">
  * 3. Longest Substring Without Repeating Characters
+ * </a>
  * */
 object LongestSubstringWithoutRepeatingCharacters3 extends App {
   def lengthOfLongestSubstring(s: String): Int = {
@@ -17,7 +18,7 @@ object LongestSubstringWithoutRepeatingCharacters3 extends App {
     }
 
     @scala.annotation.tailrec
-    def maxSubstring(s: Seq[Char], maxLen: Int = 0): Int = if (s.isEmpty || s.length <= maxLen) maxLen else maxSubstring(s.tail, Math.max(maxLen, startingSubstringLen(s)))
+    def maxSubstring(s: Seq[Char], maxLen: Int = 0): Int = if (s.isEmpty || s.length <= maxLen) maxLen else maxSubstring(s.tail, maxLen max startingSubstringLen(s))
 
     maxSubstring(s.toList)
   }

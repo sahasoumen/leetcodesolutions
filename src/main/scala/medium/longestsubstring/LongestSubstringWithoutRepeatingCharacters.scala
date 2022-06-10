@@ -2,8 +2,9 @@ package com.soumen.leetcodesolutions
 package medium.longestsubstring
 
 /**
- * https://leetcode.com/problems/longest-substring-without-repeating-characters/
+ * <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">
  * 3. Longest Substring Without Repeating Characters
+ * </a>
  * */
 object LongestSubstringWithoutRepeatingCharacters extends App {
   def lengthOfLongestSubstring(s: String): Int = {
