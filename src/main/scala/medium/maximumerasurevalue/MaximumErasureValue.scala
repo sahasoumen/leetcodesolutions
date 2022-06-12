@@ -9,14 +9,13 @@ package medium.maximumerasurevalue
 object MaximumErasureValue extends App {
   def maximumUniqueSubarray(nums: Array[Int]): Int = {
     @scala.annotation.tailrec
-    def helper(i: Int = 0, l1: Int = 0, l2: Int = 0, runningSum: Int = 0, maxSum: Int = 0, m: Map[Int, Int] = Map.empty): Int = {
+    def helper(i: Int = 0, l1: Int = 0, l2: Int = 0, runningSum: Int = 0, maxSum: Int = 0, m: Map[Int, Int] = Map.empty): Int =
       if (i == nums.length) maxSum
       else if (l1 < l2) helper(i, l1 + 1, l2, runningSum - nums(l1), maxSum, m - nums(l1))
       else m get nums(i) match {
         case None => helper(i + 1, l1, l2, runningSum + nums(i), maxSum max (runningSum + nums(i)), m + (nums(i) -> i))
         case Some(l) => helper(i, l1, l + 1, runningSum, maxSum, m)
       }
-    }
 
     helper()
   }
