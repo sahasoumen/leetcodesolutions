@@ -13,7 +13,6 @@ object Triangle4 extends App {
   println(minimumTotal(List(List(2), List(3, 4), List(6, 5, 7), List(4, 1, 8, 3))))
   println(minimumTotal(List(List(-10))))
   println(minimumTotal(List(List(-1), List(2, 3), List(1, -1, -3))))
-
 }
 //Runtime: 985 ms, faster than 23.08% of Scala online submissions for Triangle.
 //Memory Usage: 74.1 MB, less than 34.61% of Scala online submissions for Triangle.
