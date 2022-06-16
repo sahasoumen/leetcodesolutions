@@ -2,8 +2,9 @@ package com.soumen.leetcodesolutions
 package medium.longestpalindrome
 
 /**
- * https://leetcode.com/problems/longest-palindromic-substring/
- * 5. Longest Palindromic Substring
+ * <a href="https://leetcode.com/problems/longest-palindromic-substring/">
+ *   5. Longest Palindromic Substring
+ * </a>
  * */
 object LongestPalindromicSubstring4 extends App {
   def longestPalindrome(s: String): String = {
