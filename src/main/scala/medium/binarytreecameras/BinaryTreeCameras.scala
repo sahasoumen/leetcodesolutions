@@ -21,7 +21,7 @@ object BinaryTreeCameras extends App {
         case ((_, leftCount), (_, rightCount)) => NotMonitored -> (leftCount + rightCount)
       }
 
-    if (root == null) 0 else dfs() match {
+    dfs() match {
       case (NotMonitored, count) => count + 1
       case (_, count) => count
     }
@@ -30,5 +30,5 @@ object BinaryTreeCameras extends App {
   val root = TreeNode(1, null, TreeNode(2, null, TreeNode(3, null, TreeNode(4))))
   println(minCameraCover(root))
 }
-//Runtime: 966 ms, faster than 50.00% of Scala online submissions for Binary Tree Cameras.
-//Memory Usage: 70.1 MB, less than 100.00% of Scala online submissions for Binary Tree Cameras.
+//Runtime: 833 ms, faster than 100.00% of Scala online submissions for Binary Tree Cameras.
+//Memory Usage: 71 MB, less than 100.00% of Scala online submissions for Binary Tree Cameras.
