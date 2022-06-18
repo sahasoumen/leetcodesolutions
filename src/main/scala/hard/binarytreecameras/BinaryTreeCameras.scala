@@ -1,5 +1,5 @@
 package com.soumen.leetcodesolutions
-package medium.binarytreecameras
+package hard.binarytreecameras
 
 /**
  * <a href="https://leetcode.com/problems/binary-tree-cameras/">
