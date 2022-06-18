@@ -14,7 +14,7 @@ class ReverseTrie() {
   val data = Array.fill[Option[ReverseTrie]](26)(None)
   var index: Int = -1
 
-  def add(word: String, ind: Int, i: Int): Unit = {
+  def add(word: String,   ind: Int, i: Int): Unit = {
     if (i >= 0) data(word(i) - 'a').getOrElse {
       val rt = new ReverseTrie
       data(word(i) - 'a') = Some(rt)
@@ -58,7 +58,7 @@ class WordFilter4(_words: Array[String]) {
  * var param_1 = obj.f(prefix,suffix)
  */
 object PrefixAndSuffixSearch4 extends App {
-  val wordFilter = new WordFilter5(Array("cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"))
+  val wordFilter = new WordFilter4(Array("cabaabaaaa", "ccbcababac", "bacaabccba", "bcbbcbacaa", "abcaccbcaa", "accabaccaa", "cabcbbbcca", "ababccabcb", "caccbbcbab", "bccbacbcba"))
   println(wordFilter.f("bccbacbcba", "a")) //9
   println(wordFilter.f("ab", "abcaccbcaa")) //4
   println(wordFilter.f("a", "aa")) //5
