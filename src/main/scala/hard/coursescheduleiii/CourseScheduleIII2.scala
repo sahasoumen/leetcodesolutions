@@ -23,5 +23,5 @@ object CourseScheduleIII2 extends App {
   println(scheduleCourse(Array(Array(1, 2)))) //1
   println(scheduleCourse(Array(Array(3, 2), Array(4, 3)))) //0
 }
-//Runtime: 1969 ms, faster than 44.44% of Scala online submissions for Course Schedule III.
-//Memory Usage: 127.6 MB, less than 55.56% of Scala online submissions for Course Schedule III.
+//Runtime: 1250 ms, faster than 88.89% of Scala online submissions for Course Schedule III.
+//Memory Usage: 66.5 MB, less than 88.89% of Scala online submissions for Course Schedule III.
