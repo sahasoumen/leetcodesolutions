@@ -12,9 +12,8 @@ object LongestConsecutiveSequence2 extends App {
 
     def longest(n: Int): Int = map get n match {
       case None => 0
-      case Some(1) => val c = 1 + longest(n - 1)
-        map += n -> c
-        c
+      case Some(1) => map += n -> (1 + longest(n - 1))
+        map(n)
       case Some(v) => v
     }
 
@@ -25,5 +24,5 @@ object LongestConsecutiveSequence2 extends App {
   println(longestConsecutive(Array(0, 3, 7, 2, 5, 8, 4, 6, 0, 1))) //9
   println(longestConsecutive(Array())) //0
 }
-//Runtime: 1677 ms, faster than 40.00% of Scala online submissions for Longest Consecutive Sequence.
-//Memory Usage: 100.9 MB, less than 48.57% of Scala online submissions for Longest Consecutive Sequence.
+//Runtime: 1503 ms, faster than 48.57% of Scala online submissions for Longest Consecutive Sequence.
+//Memory Usage: 105.3 MB, less than 42.86% of Scala online submissions for Longest Consecutive Sequence.
